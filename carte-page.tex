@@ -1,0 +1,66 @@
+
+%% $Id: carte-page-img-fgp.tex,v 1.6 2003/11/03 00:39:28 gilles Exp gilles $
+\documentclass[french]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=10mm,bmargin=10mm,lmargin=15mm,rmargin=15mm,headheight=0cm,headsep=0cm,footskip=0cm}
+\pagestyle{empty}
+\setlength\parskip{\medskipamount}
+\setlength\parindent{0pt}
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{multicol}
+\makeatother
+
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\providecommand{\tabularnewline}{\\}
+
+\usepackage{letterspace}
+\providecommand{\xw}[1]{\letterspace to 80mm{#1}}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+	\put(0,0){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[width=\paperwidth,height=\paperheight]{images/bg.ps}%
+			\vfill
+}}}
+
+
+\usepackage{babel}
+\makeatother
+\begin{document}
+% \AddToShipoutPicture{\BackgroundPic}
+%%\setlength{\premulticols}{2cm}
+%%\setlength{\postmulticols}{14cm}
+\setlength{\multicolsep}{1cm}
+%%\setlength{\columnsep}{0.5cm}
+\setlength{\columnseprule}{0mm}
+%%\setcounter{collectmore}{0}
+\setcounter{unbalance}{1}
+\setcounter{columnbadness}{0}
+%%\setcounter{finalcolumnbadness}{999}
+%%\setcounter{tracingmulticols}{1}
+%%\setlength{\linewidth}{20cm}
+\begin{multicols}{2}
+[\section*{Cartes de visite de Luc Chabassier}]
+%%\flushcolumns
+\raggedcolumns
+%%\raggedright
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+\noindent \input{carte-fgp.tex}
+%%\noindent \input{carte-fgp.tex}
+
+\end{multicols}
+\end{document}
+
