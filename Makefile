@@ -2,7 +2,7 @@ NAME=carte
 PAGE=fgp
 ALL=$(NAME)-$(PAGE)
 DEST=$(ALL).ps
-VIEWER=evince
+VIEWER=zathura
 
 all : $(DEST)
 
